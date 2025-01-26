@@ -1,0 +1,573 @@
+/* 🔹 إعادة ضبط القيم الافتراضية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 🔹 تصميم الهيدر */
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* 🔹 زر الاشتراك التجريبي */
+.signup-btn {
+    background-color: #1c1d6c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #141551;
+}
+
+/* 🔹 تصميم قسم المقدمة */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 50px;
+    background-color: white;
+    height: 90vh;
+    position: relative;
+}
+
+.text-content {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.trusted {
+    font-size: 1rem;
+    color: #ff9800;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* 🔹 الأزرار */
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.install-btn {
+    background-color: #1c1d6c;
+    color: white;
+}
+
+.install-btn:hover {
+    background-color: #141551;
+}
+
+.trial-btn {
+    background-color: #f4a825;
+    color: white;
+}
+
+.trial-btn:hover {
+    background-color: #d68f15;
+}
+
+/* 🔹 تصميم الفيديو */
+.video-content {
+    width: 50%;
+    text-align: right;
+}
+
+.video-content iframe {
+    width: 100%;
+    max-width: 550px;
+    height: 310px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 تأثيرات الخلفية */
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(0, 0, 255, 0.1);
+    border-radius: 50%;
+    top: 10%;
+    left: 5%;
+    z-index: -1;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 165, 0, 0.1);
+    border-radius: 50%;
+    bottom: 5%;
+    right: 10%;
+    z-index: -1;
+}
+
+/* 🔹 تصميم متجاوب للأجهزة الصغيرة */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .text-content, .video-content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .video-content {
+        text-align: center;
+    }
+
+    .btn {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+/* 🔹 تصميم قسم المميزات */
+.features {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.features h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    width: 250px;
+    text-align: center;
+}
+
+.feature img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* 🔹 تصميم قسم خطوات التثبيت */
+.how-to-install {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.steps-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.steps {
+    max-width: 400px;
+    text-align: left;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon {
+    font-size: 1.5rem;
+    color: #28a745;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.step-text h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.step-text p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.installation-preview img {
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 تصميم متجاوب للأجهزة الصغيرة */
+@media (max-width: 1024px) {
+    .features-grid, .steps-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* 🔹 تصميم قسم التقييمات */
+.testimonials {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.testimonials-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonial img {
+    width: 60px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.testimonial h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.role {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* 🔹 تصميم قسم التسعير */
+.pricing {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.pricing h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.plan {
+    width: 300px;
+    background: #1c1d6c;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.plan h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.plan .price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.plan .price span {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plan ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.plan .btn {
+    display: block;
+    margin-top: 20px;
+    background-color: #f4a825;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.plan .btn:hover {
+    background-color: #d68f15;
+}
+
+/* 🔹 تصميم متجاوب للأجهزة الصغيرة */
+@media (max-width: 1024px) {
+    .testimonials-grid, .pricing-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 80%;
+        max-width: 400px;
+    }
+}
+/* 🔹 قسم الأسئلة الشائعة والتواصل */
+.faq-contact {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+}
+
+.faq, .contact {
+    width: 45%;
+}
+
+.faq h2, .contact h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.faq h3, .contact h3 {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+details {
+    cursor: pointer;
+}
+
+details summary {
+    font-weight: bold;
+}
+
+.contact form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact form .btn:hover {
+    background-color: #0056b3;
+}
+
+/* 🔹 الفوتر */
+footer {
+    background-color: #1c1d6c;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.footer-links, .footer-services, .footer-contact {
+    width: 30%;
+}
+
+.footer-links h3, .footer-services h3, .footer-contact h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-links ul, .footer-services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li, .footer-services ul li {
+    margin-bottom: 5px;
+}
+
+.footer-links ul li a, .footer-services ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover, .footer-services ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+}
+
+/* 🔹 تصميم متجاوب للأجهزة الصغيرة */
+@media (max-width: 1024px) {
+    .faq-contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq, .contact {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links, .footer-services, .footer-contact {
+        width: 100%;
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support | MerchPilot</title>
+    <link rel="stylesheet" href="styles/support.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Support Center</h1>
+            <p>How can we help you?</p>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <button class="faq-question">Where can I find my license key? ▼</button>
+                <div class="faq-answer">
+                    <p>Your license key is sent to your registered email after purchase. You can also find it in your account dashboard.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">How do I reset my password? ▼</button>
+                <div class="faq-answer">
+                    <p>You can reset your password by clicking on "Forgot Password" on the login page.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">What payment methods do you accept? ▼</button>
+                <div class="faq-answer">
+                    <p>We accept Visa, MasterCard, PayPal, and other secure payment methods.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">How do I contact support? ▼</button>
+                <div class="faq-answer">
+                    <p>You can reach out to us using the contact form below or via email at <a href="mailto:support@merchpilot.com">support@merchpilot.com</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="submit-support.php" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Describe your issue" required></textarea>
+
+                <button type="submit" class="btn">Submit Request</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 MerchPilot | <a href="terms-of-service.html">Terms of Service</a> | <a href="privacy-policy.html">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

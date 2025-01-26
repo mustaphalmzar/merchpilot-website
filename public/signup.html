@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | MerchPilot</title>
+    <link rel="stylesheet" href="styles/signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="left-section">
+            <h1><span class="highlight">Market-leading</span> automation for Merch by Amazon</h1>
+            <div class="features">
+                <div class="feature-item">
+                    <img src="assets/icons/customize.svg" alt="Customization">
+                    <p>Customizable Uploads</p>
+                </div>
+                <div class="feature-item">
+                    <img src="assets/icons/speed.svg" alt="Speed">
+                    <p>Fast and Automated</p>
+                </div>
+                <div class="feature-item">
+                    <img src="assets/icons/security.svg" alt="Security">
+                    <p>Secure & Reliable</p>
+                </div>
+                <div class="feature-item">
+                    <img src="assets/icons/support.svg" alt="Support">
+                    <p>24/7 Support</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="right-section">
+            <h2>Sign Up</h2>
+            <p>Automate your Merch business today.</p>
+            <form action="dashboard.html" method="POST">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+                <div class="terms">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the <a href="terms-of-service.html">Terms of Service</a> and <a href="privacy-policy.html">Privacy Policy</a></label>
+                </div>
+
+                <button type="submit" class="btn signup-btn">Sign Up</button>
+
+                <div class="or-divider">
+                    <span>Or</span>
+                </div>
+
+                <button type="button" class="btn google-btn">
+                    <img src="assets/icons/google.svg" alt="Google"> Register with Google
+                </button>
+
+                <p class="login-link">Already have an account? <a href="login.html">Log In</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

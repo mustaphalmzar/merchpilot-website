@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | MerchPilot</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- القائمة الجانبية -->
+        <aside class="dashboard-sidebar">
+            <div class="logo">
+                <img src="assets/logo.png" alt="MerchPilot Logo">
+                <h2>Welcome, Mustapha</h2>
+            </div>
+            <ul>
+                <li class="active"><a href="#">Dashboard</a></li>
+                <li><a href="#">License Keys</a></li>
+                <li><a href="#">Subscriptions</a></li>
+                <li><a href="#">Downloads</a></li>
+                <li><a href="#">Payment Methods</a></li>
+                <li><a href="#">Account Settings</a></li>
+                <li class="logout"><a href="#">Logout</a></li>
+            </ul>
+        </aside>
+
+        <!-- محتوى لوحة التحكم -->
+        <main class="dashboard-content">
+            <header class="dashboard-header">
+                <h1>Dashboard Overview</h1>
+                <p>Manage your license, subscription, and account settings efficiently.</p>
+            </header>
+
+            <div class="dashboard-widgets">
+                <div class="widget">
+                    <h3>License Key</h3>
+                    <p><strong>XXXXX-XXXXX-XXXXX</strong></p>
+                    <button>View Details</button>
+                </div>
+
+                <div class="widget">
+                    <h3>Subscription Status</h3>
+                    <p>Active - <strong>Premium Plan</strong></p>
+                    <button>Manage Subscription</button>
+                </div>
+
+                <div class="widget">
+                    <h3>Available Downloads</h3>
+                    <p>5 Pending Downloads</p>
+                    <button>View Downloads</button>
+                </div>
+
+                <div class="widget">
+                    <h3>Payment Methods</h3>
+                    <p>Visa **** 1234</p>
+                    <button>Update Payment</button>
+                </div>
+            </div>
+
+            <section class="dashboard-actions">
+                <h2>Quick Actions</h2>
+                <div class="actions">
+                    <button class="btn">Update License</button>
+                    <button class="btn">Renew Subscription</button>
+                    <button class="btn">Download Invoice</button>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

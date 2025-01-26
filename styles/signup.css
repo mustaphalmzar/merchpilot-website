@@ -1,0 +1,190 @@
+/* 🔹 عام */
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 🔹 تصميم الحاوية الرئيسية */
+.signup-container {
+    display: flex;
+    width: 80%;
+    max-width: 1100px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* 🔹 القسم الأيسر */
+.left-section {
+    width: 50%;
+    background: linear-gradient(to right, #1c1d6c, #0056b3);
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-section h1 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+
+.highlight {
+    color: #ffd700;
+}
+
+/* 🔹 الميزات */
+.features {
+    margin-top: 20px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.feature-item img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* 🔹 القسم الأيمن */
+.right-section {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-section h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.right-section p {
+    text-align: center;
+    color: #666;
+}
+
+/* 🔹 الحقول */
+.right-section input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* 🔹 الشروط */
+.terms {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.terms input {
+    margin-right: 10px;
+}
+
+.terms a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+/* 🔹 الأزرار */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* 🔹 زر التسجيل */
+.signup-btn {
+    background-color: #0056b3;
+    color: white;
+}
+
+.signup-btn:hover {
+    background-color: #003f7f;
+}
+
+/* 🔹 زر Google */
+.google-btn {
+    background: white;
+    color: black;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* 🔹 تقسيم أو */
+.or-divider {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 0.9rem;
+    color: #777;
+    position: relative;
+}
+
+.or-divider span {
+    background: white;
+    padding: 0 10px;
+}
+
+/* 🔹 رابط تسجيل الدخول */
+.login-link {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.login-link a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* 🔹 تصميم متجاوب */
+@media (max-width: 768px) {
+    .signup-container {
+        flex-direction: column;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .feature-item {
+        justify-content: center;
+    }
+}

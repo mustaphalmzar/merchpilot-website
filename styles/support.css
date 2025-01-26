@@ -1,0 +1,122 @@
+/* 🔹 تصميم عام */
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fc;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* 🔹 الهيدر */
+.header {
+    background: linear-gradient(to right, #1c1d6c, #0056b3);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.header p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* 🔹 المحتوى */
+.content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 قسم الأسئلة الشائعة */
+.faq h2 {
+    color: #0056b3;
+    border-bottom: 2px solid #1c1d6c;
+    padding-bottom: 5px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    width: 100%;
+    background: #0056b3;
+    color: white;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.faq-question:hover {
+    background: #003f7f;
+}
+
+.faq-answer {
+    display: none;
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* 🔹 نموذج الاتصال */
+.contact-form h2 {
+    color: #0056b3;
+    border-bottom: 2px solid #1c1d6c;
+    padding-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* 🔹 زر الإرسال */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #0056b3;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #003f7f;
+}
+
+/* 🔹 الفوتر */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #1c1d6c;
+    color: white;
+}
+
+.footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
